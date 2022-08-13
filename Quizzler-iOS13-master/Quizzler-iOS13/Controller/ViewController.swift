@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var progress: UIProgressView!
     var quizStorage = QuizStorage()
+    @IBOutlet weak var score: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +26,12 @@ class ViewController: UIViewController {
     @IBAction func answerQuestion(_ sender: UIButton) {
         let userAnswer = sender.currentTitle!
         let isCorrect = quizStorage.checkAnswer(userAnswer: userAnswer)
-     
-        if(isCorrect) {
+        score.text = "Score: \(quizStorage.getScore())"
+        if isCorrect {
             sender.backgroundColor = .green
         } else {
-            sender.backgroundColor = .red        }
+            sender.backgroundColor = .red
+        }
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionUI), userInfo: nil, repeats: false)
         quizStorage.incrementQuestion()
         
@@ -42,6 +44,7 @@ class ViewController: UIViewController {
         button1.backgroundColor = .clear
         button2.backgroundColor = .clear
         progress.progress = quizStorage.getProgress()
+        
     }
     
 }

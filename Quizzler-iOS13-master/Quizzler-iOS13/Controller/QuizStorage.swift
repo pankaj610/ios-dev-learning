@@ -18,14 +18,20 @@ struct QuizStorage {
 //        ["", "0", "-1"]
     ]
     var questionNumber = 0
+    var score = 0
     
-     func checkAnswer(userAnswer: String) -> Bool {
+     mutating func checkAnswer(userAnswer: String) -> Bool {
         if(quiz[questionNumber].answer == userAnswer) {
+            score += 1
             return true
         } else {
             return false
         }
         
+    }
+    
+    func getScore() -> Int {
+        return score
     }
     
     mutating func incrementQuestion() {
