@@ -1,18 +1,19 @@
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+Weather App - Clima
 
-#  Clima
+# Screenshots
 
-## Our Goal
+![Simulator Screen Shot - iPhone 12 - 2022-10-31 at 01 29 36](https://user-images.githubusercontent.com/107383299/198899052-67e8a6e9-8997-4f02-98c3-3fe5c573258b.png)
 
-It’s time to take our app development skills to the next level. We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
+![Simulator Screen Shot - iPhone 12 - 2022-10-31 at 01 29 39](https://user-images.githubusercontent.com/107383299/198899053-246b7afa-df45-49a8-896a-93b144965a6e.png)
+
+![Simulator Screen Shot - iPhone 12 - 2022-10-31 at 01 29 20](https://user-images.githubusercontent.com/107383299/198899050-86007a5e-6f5b-42f3-81d5-c130cecab46e.png)
 
 
-## What you will create
 
-By the end of the module, you will have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
+We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
 
-## What you will learn
+We have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
 
 * How to create a dark-mode enabled app.
 * How to use vector images as image assets.
@@ -47,8 +48,3 @@ switch conditionID {
         default:
             return "cloud"
         }
-```
-
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
